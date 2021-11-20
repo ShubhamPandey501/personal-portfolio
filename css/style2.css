@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+.head{
+    height: 95vh;
+    background: url('../images/intrest.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5));
+
+}
+/*#########################______________yoga part start___________######################################## */
+.main{
+    margin: 180px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    box-shadow: 5px 5px 20px 0px #aaa;
+    
+
+}
+
+
+.yoga{
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 10px;
+    order: 2;
+    flex-grow: 1;
+
+}
+.yoga p{
+    font-size: 15px;
+    text-align: left;
+}
+.image-yoga{
+    display: block;
+    position: relative;
+    order: 1;
+    flex-grow: 2;
+}
+.image-yoga .iyoga{
+
+height: 100%;
+width: 100%;
+}
+main .yoga .yhead{
+    color:rgb(148, 103, 21);
+    font-size: 23px;
+}
+.ybtn{
+display: inline-block;
+text-decoration: none;
+border-radius: 50px;
+cursor: pointer;
+background-color: #fff;
+color: rgb(148, 103, 21);
+padding: 3px 4px;
+transition: all 0.6s ease-in-out;
+}
+.ybtn:hover{
+    background: #000;
+}
+.y-content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+   opacity: 0;
+   z-index: 2;
+   transition: all 0.4s ease-in-out;
+}
+.image-yoga:hover .y-content{
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+}
+.image-yoga::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.image-yoga:hover::after{
+    opacity: 1;
+}
+/*##############################_____________end____________________________########################*/
+
+
+/*##############################____________chess part start_____________###########################*/
+.chess-text{
+    order: 5;
+    padding-right: 30px;
+}
+.image-chess{
+    position: relative;
+    display: block;
+    order: 6;
+}
+.image-chess .ichess{
+
+    height: 100%;
+    width: 100%;
+    }
+.image-chess::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+}
+.image-chess:hover::after{
+    opacity: 1;
+}
+
+.c-head{
+    color:rgb(148, 103, 21);
+    font-size: 23px;
+}
+.image-chess:hover .y-content{
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+}
+
+
+
+/*#########################################__________end_____________#############################*/
+
+/*########################################________writer________________#########################*/
+.image-writer{
+    position: relative;
+    display: block;
+    order: 3;
+}
+.writer-text{
+    order: 4;
+    padding-left: 28px;
+    padding-right: 42px;
+}
+.image-writer .i-writer{
+    height: 100%;
+    width: 100%;
+}
+.image-writer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.image-writer:hover::after{
+    opacity: 1;
+}
+.image-writer:hover .y-content{
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+}
+.w-head{
+    color:rgb(148, 103, 21);
+    font-size: 23px;
+}
+
+
+
+/*#########################################___end_________________#######################*/
+
+/*####################################_______menu bar stylin_________############################ */
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.8s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    }
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+/*###################################_________end__________#######################*/
+
+
+/*##################################__________CONTACT PAGE __________######################*/
+
+.contact{ 
+    position:relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5));
+
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 32px;
+    font-weight: 500;
+    color:rgba(0, 0, 255, 0.5);
+}
+.contact .content p{
+    font-weight: 300;
+    color: #000;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 0px;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    text-align: left;
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    flex-direction: column;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color:rgba(0, 128, 0, 0.479);
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    text-align: left;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: rgba(0, 128, 0, 0.479);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    background-color: green;
+    color:rgba(0, 0, 255, 0.5);
+
+}
+
+
+/*###############################_____________thanx-page___________###############################*/
+
+
+.thanx-head{
+    position: relative;
+    height: 250vh;
+    background: url('../images/backg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5));
+
+}
+.quote{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 300;
+    top: 27%;
+    left: 29%;
+    color: ivory;
+}
+.p-quote{
+    text-shadow: 2px 2px green;
+}
+.img-thanx{
+    box-sizing: border-box;
+    position: absolute;
+    top: 55%;
+    left: 54%;
+}
+
+/*##footer-of-thanx-page##*/
+.footer-content{
+    position: absolute;
+    top: 220%;
+    left: 40%;
+    background-color: #00000096;
+    animation-name: change-footer;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes change-footer{
+    from{
+        background-color: #00000096;
+    }
+    to{
+        background-color: #000000;
+    }
+}
+
+
+.footer-content li{
+    list-style: none;
+}
+.footer-content .social-media{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding: 20px;
+}
+.footer-content .social-media a{
+    font-size: 40px;
+    padding: 20px;
+}
+.footer-content .social-media a :hover{
+color: palevioletred;
+}
+.footer-content .social-media a :active{
+    color: green;
+    }
+
+.footer-content h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    animation: footer-h2 10s ease-in-out 4s 1 forwards;
+}
+@keyframes footer-h2{
+    0%{
+      color: black;
+    }
+    5%{
+        color:rgba(0, 0, 0, 0.658);
+    }
+    10%{
+        color: rgba(0, 0, 0, 0.281);
+    }
+    15%{
+        color: rgba(0, 0, 0, 0.062);
+    }
+    18%{
+        color: rgba(255, 255, 255, 0.288);
+    }
+    20%{
+        color: rgba(255, 255, 255, 0.473)
+    }
+    22%{
+        color: rgba(255, 255, 255, 0.644);
+    }
+    25%{
+      color: white
+    }
+    50%{
+      color: rgba(137, 43, 226, 0.247);
+    }
+    75%{
+       color: rgba(137, 43, 226, 0.589);
+    }
+    100%{
+       color: blueviolet;
+    }
+}
+
+/*############_________WRITER-Quote________##################*/
+.writer-image{
+    box-sizing: border-box;
+    float: left;
+}
+.writer-quote{
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: 5px 5px 20px 0px #aaa;
+    margin-right: 100px;
+    margin-top: 200px;
+    padding: 60px 40px;
+    color:rgb(148, 103, 21);
+    float: right;
+}
+.w-btn{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(148, 103, 21);
+    padding: 3px 4px;
+    }
+    .w-btn:hover{
+        background: #000;
+    }
+/*###################__________SPACE___________################################*/
+.space{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+
+/*############_________MEDIA QUERY______________####################*/
+@media (max-width: 500px)
+{
+    html{
+        font-size: 8px;
+    }
+    .main{
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .contact{
+        margin: auto;
+    }
+    .img-thanx{
+        max-width: 320px;
+        position: absolute;
+        top: 55%;
+        left: 0%;
+    }
+    .footer-content{
+        position: absolute;
+        top: 200%;
+        left: 3%;
+    }
+}
+
+
+
